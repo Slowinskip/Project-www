@@ -1,4 +1,91 @@
 $font-1: 'Dancing Script', cursive;
 $font-2: 'Pacifico', cursive;
-$font-3: 'Archivo', sans-serif;
+$font-3: 'Bebas Neue', cursive;
+
+body {
+    background: black;
+    margin: 0;
+}
+container {
+    
+}
+/* Header */
+
+header .row {
+    background-image: url(https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_960_720.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+}
+.company-name {
+    padding-top: 0px;
+    padding-left: 150px;
+    max-height: 200px;
+    h3 {
+        color: goldenrod;
+        font-family: $font-1;
+        font-size: 45px;
+    }
+}
+.menu {
+    padding-top: 45px;
+    max-height: 200px;
+
+    ul {
+       
+    }
+    li {
+        display: inline-block;
+        margin-right: 50px;
+        list-style: none;
+        
+    }
+    a {
+        text-decoration: none;
+        color: #FFF;
+        font-family: $font-3;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    a:hover {
+        color: goldenrod;
+    }
+}
+.header-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    h2 {
+        font-family: $font-2;
+        color: #e67e22;
+        font-size: 50px;
+        margin-bottom: 0;
+        
+    }
+    h1 {
+        font-family: $font-3;
+        color: #e67e22;
+        font-size: 100px;
+        word-spacing: 10px;
+        letter-spacing: 5px;
+        font-weight: bolder;
+        margin-top: 0;
+    }
+    a {
+        text-decoration: none;
+        list-style: none;
+        color: #fff;
+        padding: 25px 50px;
+        background-color: goldenrod;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    a:hover {
+        color: black;
+    }
+}
 
