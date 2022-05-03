@@ -3,7 +3,6 @@ $font-2: 'Pacifico', cursive;
 $font-3: 'Bebas Neue', cursive;
 
 body {
-    background: black;
     margin: 0;
 }
 container {
@@ -89,3 +88,59 @@ header .row {
     }
 }
 
+
+
+
+/*Media */
+
+@media (max-width: 768px) {
+    .company-name {
+        border: 1px solid red;
+        padding-left: 15px;
+
+    }
+    .menu {
+        border: 1px solid red;
+        padding-top: 0;
+        text-align: right;
+
+        li {
+            display: block;
+            margin-right: 0px;
+            padding-right: 15px;
+        }
+    }   
+    .header-center {
+        h2 {
+            font-size: 34px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        a {
+            padding: 12px 25px;
+
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .company-name {
+        border: 1px solid red;
+        padding-left: 15px;
+    }
+
+    .menu {
+        border: 1px solid red;
+        padding-top: 0;
+        text-align: right;
+    }
+        li {
+            display: inline-block;
+            margin-right: 0px;
+            padding-right: 15px;
+            
+        }
+        a {
+            
+        }
+}
