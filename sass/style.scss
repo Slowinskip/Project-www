@@ -5,8 +5,8 @@ $font-3: 'Bebas Neue', cursive;
 body {
     margin: 0;
 }
-container {
-    
+section {
+    margin: 30px 0;
 }
 /* Header */
 
@@ -88,6 +88,40 @@ header .row {
     }
 }
 
+/* Services */
+.services {
+    text-align: center;
+    .heading {
+        h1 {
+            color: black;
+            font-family: $font-3;
+            font-weight: bold;
+            font-size: 60px;
+            letter-spacing: 4px;
+            margin-bottom: 0;
+        }
+        p {
+            color: #7f8c8d;
+            font-size: 20px;
+            margin-top: 0;
+        }
+    }
+    .card {
+        margin-top: 45px;
+        padding: 0 45px;
+        i {
+            font-size: 45px;
+            border: 2px solid goldenrod;
+            border-radius: 50%;
+            padding: 25px;
+            color: goldenrod;
+        }
+        p {
+            color: #7f8c8d;
+            font-size: 20px; 
+        }
+    }
+}
 
 
 
