@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 section {
-    margin: 30px 0;
+   
 }
 /* Header */
 
@@ -97,6 +97,7 @@ header .row {
         justify-content: center;
     }
     .heading {
+        margin-top: 50px;
         h1 {
             color: black;
             font-family: $font-3;
@@ -112,7 +113,7 @@ header .row {
         }
     }
     .card {
-        margin-top: 45px;
+        margin: 45px 0;
         padding: 0 45px;
         i {
             font-size: 45px;
@@ -129,7 +130,57 @@ header .row {
 }
 
 /* Portfolio */
+.portfolio {
+    text-align: center;
+    background-color: #ecf0f1;
 
+    .row {
+        display: flex;
+        justify-content: center;
+        
+        .heading {
+            margin-top: 50px;
+            h1 {
+                color: black;
+                font-family: $font-3;
+                font-weight: bold;
+                font-size: 60px;
+                letter-spacing: 4px;
+                margin-bottom: 0;
+            }
+            p {
+                color: #7f8c8d;
+                font-size: 20px;
+                margin-top: 0;    
+            }
+        }
+        .card {
+            padding: 0;
+            margin: 45px 10px;
+            background: #fff; 
+            margin-bottom: 50px;       
+            .card-text {
+                padding: 15px 0;
+                h3 {
+                    margin: 0;
+                    font-size: 20px;
+                }
+                p {
+                    color: #7f8c8d;
+                    font-size: 15px; 
+                    margin: 0px;
+                }    
+            }
+            img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+            }
+        }
+    }
+
+    
+}
 
 
 /*Media */
