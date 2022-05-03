@@ -91,6 +91,11 @@ header .row {
 /* Services */
 .services {
     text-align: center;
+
+    .row {
+        display: flex;
+        justify-content: center;
+    }
     .heading {
         h1 {
             color: black;
@@ -122,6 +127,8 @@ header .row {
         }
     }
 }
+
+/* Portfolio */
 
 
 
