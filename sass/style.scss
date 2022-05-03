@@ -30,6 +30,7 @@ header .row {
 .menu {
     padding-top: 45px;
     max-height: 200px;
+    text-align: right;
 
     ul {
        
@@ -207,6 +208,10 @@ footer {
         a {
             color: #fff;
             text-decoration: none;
+            span {
+                font-size: 0px;
+            }
+            
         }
         a:hover {
          color: goldenrod;
@@ -217,7 +222,7 @@ footer {
 
 /*Media */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .company-name {
         border: 1px solid red;
         padding-left: 15px;
@@ -231,7 +236,6 @@ footer {
         li {
             display: block;
             margin-right: 0px;
-            padding-right: 15px;
         }
     }   
     .header-center {
@@ -246,25 +250,51 @@ footer {
 
         }
     }
+    footer {
+        text-align: center;
+    }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
     .company-name {
+        padding-left: 35px;
         border: 1px solid red;
-        padding-left: 15px;
     }
 
     .menu {
-        border: 1px solid red;
-        padding-top: 0;
+        padding-top: 45px;
         text-align: right;
-    }
+        border: 1px solid red;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: end;
         li {
-            display: inline-block;
-            margin-right: 0px;
-            padding-right: 15px;
-            
+            a {
+                margin: -10px;
+            }
+        }
+    }
+    .header-center {
+        h2 {
+            font-size: 44px;
+        }    
+        h1 {
+            font-size: 60px;
         }
         a {
-            
+            padding: 20px 40px;
         }
+    }
+    .services {
+        .card {
+            padding: 0 15px;
+        }
+    }
+    footer {
+        text-align: center;
+    }    
+    
+    
 }
