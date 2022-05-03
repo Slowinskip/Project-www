@@ -2,6 +2,8 @@ $font-1: 'Dancing Script', cursive;
 $font-2: 'Pacifico', cursive;
 $font-3: 'Bebas Neue', cursive;
 
+$transition: all 1s;
+
 body {
     margin: 0;
 }
@@ -51,6 +53,7 @@ header .row {
     }
     a:hover {
         color: goldenrod;
+        transition: $transition;
     }
 }
 .header-center {
@@ -80,12 +83,15 @@ header .row {
         list-style: none;
         color: #fff;
         padding: 25px 50px;
+        border-radius: 8px;
         background-color: goldenrod;
         font-size: 20px;
         font-weight: bold;
     }
     a:hover {
         color: black;
+        border-radius: 25px;
+        transition: $transition;
     }
 }
 
@@ -122,8 +128,17 @@ header .row {
             border-radius: 50%;
             padding: 25px;
             color: goldenrod;
+            background-image: linear-gradient(50deg, #ecf0f1 50%, transparent 50%);
+            background-position: 100% 0;
+            background-size: 300%;
+        }
+        i:hover {
+            background-position: 0 100%;
+            transition: $transition;
+            transform: scale(1.2);
         }
         p {
+            
             color: #7f8c8d;
             font-size: 20px; 
         }
@@ -159,6 +174,7 @@ header .row {
             padding: 0;
             margin: 45px 10px;
             background: #fff; 
+            border-radius: 10px;
                    
             .card-text {
                 padding: 15px 0;
@@ -176,6 +192,8 @@ header .row {
             height: 300px;
             width: 100%;
             object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
             }
         }
     }
@@ -213,8 +231,12 @@ footer {
             }
             
         }
-        a:hover {
+        i:hover {
          color: goldenrod;
+         transition: $transition;
+         transform: scale(1.2);
+         margin-left: 4px;
+         margin-right: 4px;
         }
     }
 }
@@ -224,12 +246,10 @@ footer {
 
 @media (max-width: 767px) {
     .company-name {
-        border: 1px solid red;
         padding-left: 15px;
 
     }
     .menu {
-        border: 1px solid red;
         padding-top: 0;
         text-align: right;
 
@@ -258,13 +278,11 @@ footer {
 @media (min-width: 768px) and (max-width: 991px) {
     .company-name {
         padding-left: 35px;
-        border: 1px solid red;
     }
 
     .menu {
         padding-top: 45px;
         text-align: right;
-        border: 1px solid red;
         margin: 0;
         display: flex;
         flex-direction: row;
